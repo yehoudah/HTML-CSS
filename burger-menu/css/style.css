@@ -1,0 +1,54 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-menu__bar {
+  width: 35px;
+  height: 2px;
+  margin: 10px 0;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.burger-menu:checked + label .burger-menu__bar:first-child {
+  -webkit-transform: rotate(-45deg) translateX(-48%);
+          transform: rotate(-45deg) translateX(-48%);
+}
+
+.burger-menu:checked + label .burger-menu__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu:checked + label .burger-menu__bar:last-child {
+  -webkit-transform: rotate(45deg) translateX(-48%);
+          transform: rotate(45deg) translateX(-48%);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.burger-menu {
+    display: none;
+    &__bar {
+        width:35px;
+        height:2px;
+        margin: 10px 0;
+        background-color: #000;
+        transition:0.4s;
+    }
+    &:checked{
+        +label{
+            .burger-menu__bar {
+                &:first-child {
+                    transform: rotate(-45deg) translateX(-48%) ;
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:last-child {
+                    transform: rotate(45deg) translateX(-48%) ;
+                }
+            }
+        }
+    }
+}
