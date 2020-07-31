@@ -1,0 +1,19 @@
+.morecontent span {
+    display: none;
+}
+
+.morelink {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #ef626c;
+
+    @media(min-width: 1200px) {
+        font-size: 20px;
+    }
+
+
+
+
+}
